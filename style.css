@@ -1,12 +1,17 @@
+/* Dispositivos grandes */
+@media only screen and (min-width: 1200px) {
+
 body {
     background-image: url("bg_dvf.jpg");
     background-repeat: no-repeat;
-    position: sticky;
+    background-size: contain;
+    background-position: right;
+    background-position: top;
 }
 
 .logo-boton {
     padding-top: 10px;
-    margin-left: 5%;
+    margin-left: 12%;
 }
 
 
@@ -20,28 +25,27 @@ body {
     padding-bottom: 7%;
     width: 550px;
     height: 400px;
-
-    .bienvenida {
-        color: white;
-        font-family: "Roboto", sans-serif;
-        font-weight: 700;
-        font-style: normal;
-        font-size: 50px;
-        padding-top: 5%;
-        padding-bottom: 0;
-    }
-        
-    .descripcion {
-        color: #dbdbdf;
-        font-family: "Roboto", sans-serif;
-        font-weight: 700;
-        font-style: normal;
-        font-size: 19px;
-        padding-top: 0;
-    }
 }
 
-
+.bienvenida {
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 50px;
+    padding-top: 5%;
+    padding-bottom: 0;
+    margin: 0;
+}
+        
+.descripcion {
+color: #dbdbdf;
+font-family: "Roboto", sans-serif;
+font-weight: 700;
+font-style: normal;
+font-size: 19px;
+padding-top: 0;
+}
 
 label {
     color: #dbdbdf;
@@ -71,116 +75,114 @@ input {
 .boton-olvido {
     margin-top: 10px;
     margin-bottom: 15px;
-    a {  
-        color: #fd3e88;
-        font-family: "IBM Plex Sans", sans-serif;
-        font-weight: 400;
-        font-style: normal;
-        font-size: 16px;
-        text-decoration: none;
-    }
 }
 
-.botones-ingreso {
+a {  
+    color: #fd3e88;
+    font-family: "IBM Plex Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    text-decoration: none;
+}
 
-    ul {
-        list-style-type: none;
-        margin-left: 0;
-        margin-right: 0;
-        margin-top:0;
-        padding-left: 0%;
-        padding-right: 10%;
-        overflow: hidden;
-    }
+.botones-ingreso ul {
+
+    list-style-type: none;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top:0;
+    padding-left: 0%;
+    padding-right: 10%;
+    overflow: hidden;
+}
       
-    li {
-        float: left;
-        margin-left: 5px;
-
-    }
+.botones-ingreso li {
+    float: left;
+    margin-left: 5px;
+}
       
-    li a:link:not(.boton-registrar) {
-        background-color: #9272ff;
-        border-color: #9272ff;
-        border-style: solid;
-        border-width: 2px;
-        color: whitesmoke;
-        display: inline-block;
-        padding: 12px 25px;
-        text-align: center;
-        text-decoration: none;
-    }
+.botones-ingreso li a:link:not(.boton-registrar) {
+    background-color: #9272ff;
+    border-color: #9272ff;
+    border-style: solid;
+    border-width: 2px;
+    color: whitesmoke;
+    display: inline-block;
+    padding: 12px 25px;
+    text-align: center;
+    text-decoration: none;
+}
     
-    li a:hover:not(.boton-registrar) {
-        background-color: #5136ad;
-        border-style: none;
-        color: whitesmoke;
-        display: inline-block;
-        padding: 12px 25px;
-        text-align: center;
-        text-decoration: none;
-    }
+.botones-ingreso li a:hover:not(.boton-registrar) {
+    background-color: #5136ad;
+    border-style: none;
+    color: whitesmoke;
+    display: inline-block;
+    padding: 12px 25px;
+    text-align: center;
+    text-decoration: none;
+}
 
-    li a:link:not(.boton-iniciar) {
-        background-color: #5136ad;
-        border-color: white;
-        border-style: solid;
-        border-width: 2px;
-        color: whitesmoke;
-        display: inline-block;
-        padding: 12px 25px;
-        text-align: center;
-        text-decoration: none;
-    }
+.botones-ingreso li a:link:not(.boton-iniciar) {
+    background-color: #5136ad;
+    border-color: white;
+    border-style: solid;
+    border-width: 2px;
+    color: whitesmoke;
+    display: inline-block;
+    padding: 12px 25px;
+    text-align: center;
+    text-decoration: none;
+}
     
-    li a:hover:not(.boton-iniciar) {
-        background-color: white;
-        color: #9272ff;
-        display: inline-block;
-        padding: 12px 25px;
-        text-align: center;
-        text-decoration: none;
-    }
+.botones-ingreso li a:hover:not(.boton-iniciar) {
+    background-color: white;
+    color: #9272ff;
+    display: inline-block;
+    padding: 12px 25px;
+    text-align: center;
+    text-decoration: none;
+}
     
-    .boton-iniciar {
-        color: white;
-        font-family: "Roboto Slab", serif;
-        font-weight: 700;
-        font-style: normal;
-        font-size: 12px;
+.boton-iniciar {
+    color: white;
+    font-family: "Roboto Slab", serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 12px;
+}
         
-        a:link {
-            background-color: #9272ff;
-            color: whitesmoke;
-            display: inline-block;
-            padding: 12px 25px;
-            text-align: center;
-            text-decoration: none;
-        }
-
-        a:hover {
-            background-color: #5136ad;
-            color: whitesmoke;
-            display: inline-block;
-            padding: 12px 25px;
-            text-align: center;
-            text-decoration: none;
-        }
-    }
-    
-    .boton-registrar {
-        color: white;
-        font-family: "Roboto Slab", serif;
-        font-weight: 700;
-        font-style: normal;
-        font-size: 12px;
-    }
+.boton-iniciar a:link {
+    background-color: #9272ff;
+    color: whitesmoke;
+    display: inline-block;
+    padding: 12px 25px;
+    text-align: center;
+    text-decoration: none;
 }
+
+.boton-iniciar a:hover {
+    background-color: #5136ad;
+    color: whitesmoke;
+    display: inline-block;
+    padding: 12px 25px;
+    text-align: center;
+    text-decoration: none;
+}
+
+    
+.boton-registrar {
+    color: white;
+    font-family: "Roboto Slab", serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 12px;
+}
+
 
 header {
     background-color: #242433;
-    margin-left: 0px;
-    margin-right: 0px;
     margin-top: 15px;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -193,7 +195,7 @@ header {
 nav {
     background-color: black;
     padding-top: 2%;
-    margin-bottom: 0;
+    margin: 0;
 
     ul {
         list-style-type: none;
@@ -205,14 +207,10 @@ nav {
         overflow: hidden;
     }
       
-    li {
-        float: left;
-    }
-      
     li a {
         display: block;
         text-align: center;
-        padding: 14px 16px;
+        padding: 2px 16px;
         text-decoration: none;
         font-family: "Roboto", sans-serif;
         font-weight: 700;
@@ -220,46 +218,45 @@ nav {
         font-size: 15px;
     }
     
-    li a:hover:not(.active) {
+    li a:hover:not(.eslogan) {
         color: #3164ac;
-    }
-    
-    .active {
-        color: #7ae038;
     }
     
     .nav-morado {
         color: #9272ff;
+        float: left;
     }
     
     .nav-gris {
         color: #242433;
+        float: left;
+    }
+
+    .eslogan {
+        color: #7ae038;
+        float: right;
     }
 }
 
 .iconos {
     background-color: black;
     padding-top: 0%;
-    margin-top: 0;
-    align-items: center;
+    margin: 0;
+    display: inline;
 
     ul {
         list-style-type: none;
         margin-left: 0;
         margin-right: 0;
-        margin-top:0;
         padding-left: 10%;
         padding-right: 10%;
         overflow: hidden;
     }
       
-    li {
-        float: left;
-    }
-      
     li a {
-        display: block;
+        float: left;
         text-align: center;
+        }
         padding: 8px 10px;
         text-decoration: none;
         font-family: "Roboto", sans-serif;
@@ -269,9 +266,8 @@ nav {
     }
 
     li img {
-        display: block;
-        text-align: center;
-        padding: 15px 10px;
+        float: right;
+        padding: 0px 10px;
     }
 }
 
@@ -308,6 +304,7 @@ footer {
         font-size: 12px;
         display: block;
         padding-left: 10%;
+        padding-right: 10%;
         padding-top: 3%;
         padding-bottom: 5%;
         text-align: left;
@@ -316,4 +313,342 @@ footer {
 
 .chat {
     position: fixed;
+    bottom: 5px;
+    right: 5px;
 }
+
+/* Pantallas chiquitas */
+@media only screen and (max-width: 1199px) {
+    body {
+        background-attachment: fixed;
+        background-image: url("bg_dvf.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: right;
+        background-position: top;
+    }
+    
+    .logo-boton {
+        padding-top: 10px;
+        margin-left: 50px
+    }
+    
+    .cuadro-informacion {
+        background-color: #5136ad;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 185px;
+        padding-left: 50px;
+        padding-right: 40px;
+        padding-bottom: 7%;
+        width: 550px;
+        height: 400px;
+    }
+    
+    .bienvenida {
+        color: white;
+        font-family: "Roboto", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 50px;
+        padding-top: 5%;
+        padding-bottom: 0;
+        margin: 0;
+    }
+            
+    .descripcion {
+    color: #dbdbdf;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 19px;
+    padding-top: 0;
+    }
+    
+    
+    
+    
+    label {
+        color: #dbdbdf;
+        font-family: "IBM Plex Sans", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 12px;
+        padding: 10px;
+    }
+    
+    input {
+        border-color: #757575;
+        border-style: solid;
+        border-width: 1px;
+        color: #757575;
+        font-family: "IBM Plex Sans", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 14px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding-left: 10px;
+        width: 530px;
+        height: 35px;
+    }
+    
+    .boton-olvido {
+        margin-top: 10px;
+        margin-bottom: 15px;
+    }
+    
+    a {  
+        color: #fd3e88;
+        font-family: "IBM Plex Sans", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 16px;
+        text-decoration: none;
+    }
+    
+    .botones-ingreso ul {
+    
+        list-style-type: none;
+        margin-left: 0;
+        margin-right: 0;
+        margin-top:0;
+        padding-left: 0%;
+        padding-right: 10%;
+        overflow: hidden;
+    }
+          
+    .botones-ingreso li {
+        float: left;
+        margin-left: 5px;
+    }
+          
+    .botones-ingreso li a:link:not(.boton-registrar) {
+        background-color: #9272ff;
+        border-color: #9272ff;
+        border-style: solid;
+        border-width: 2px;
+        color: whitesmoke;
+        display: inline-block;
+        padding: 12px 25px;
+        text-align: center;
+        text-decoration: none;
+    }
+        
+    .botones-ingreso li a:hover:not(.boton-registrar) {
+        background-color: #5136ad;
+        border-style: none;
+        color: whitesmoke;
+        display: inline-block;
+        padding: 12px 25px;
+        text-align: center;
+        text-decoration: none;
+    }
+    
+    .botones-ingreso li a:link:not(.boton-iniciar) {
+        background-color: #5136ad;
+        border-color: white;
+        border-style: solid;
+        border-width: 2px;
+        color: whitesmoke;
+        display: inline-block;
+        padding: 12px 25px;
+        text-align: center;
+        text-decoration: none;
+    }
+        
+    .botones-ingreso li a:hover:not(.boton-iniciar) {
+        background-color: white;
+        color: #9272ff;
+        display: inline-block;
+        padding: 12px 25px;
+        text-align: center;
+        text-decoration: none;
+    }
+        
+    .boton-iniciar {
+        color: white;
+        font-family: "Roboto Slab", serif;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 12px;
+    }
+            
+    .boton-iniciar a:link {
+        background-color: #9272ff;
+        color: whitesmoke;
+        display: inline-block;
+        padding: 12px 25px;
+        text-align: center;
+        text-decoration: none;
+    }
+    
+    .boton-iniciar a:hover {
+        background-color: #5136ad;
+        color: whitesmoke;
+        display: inline-block;
+        padding: 12px 25px;
+        text-align: center;
+        text-decoration: none;
+    }
+    
+        
+    .boton-registrar {
+        color: white;
+        font-family: "Roboto Slab", serif;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 12px;
+    }
+    
+    
+    header {
+        background-color: #242433;
+        margin-top: 15px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    
+    .logo-pie {
+        margin-left: 40%;
+        margin-right: 40%;
+    }
+    
+    nav {
+        background-color: black;
+        padding-top: 2%;
+        margin-bottom: 0;
+    
+        ul {
+            list-style-type: none;
+            margin-left: 0;
+            margin-right: 0;
+            margin-top:0;
+            padding-left: 10%;
+            padding-right: 10%;
+            overflow: hidden;
+        }
+          
+        li {
+            float: center;
+        }
+          
+        li a {
+            display: block;
+            text-align: center;
+            padding: 5px 16px;
+            text-decoration: none;
+            font-family: "Roboto", sans-serif;
+            font-weight: 700;
+            font-style: normal;
+            font-size: 15px;
+        }
+        
+        li a:hover:not(.eslogan) {
+            color: #3164ac;
+        }
+        
+        .nav-morado {
+            color: #9272ff;
+        }
+        
+        .nav-gris {
+            color: #242433;
+        }
+
+        .eslogan {
+            color: #7ae038;
+        }
+    }
+
+    .iconos {
+        background-color: black;
+        padding-top: 0%;
+        margin-top: 0;
+    }
+
+    .redes {
+        li {
+            display: inline;
+            padding-left: auto;
+        }
+
+        li a {
+            display: inline;
+            padding: 8px 10px;
+            text-decoration: none;
+            font-family: "Roboto", sans-serif;
+            font-weight: 700;
+            font-style: normal;
+            font-size: 15px;
+        }
+        
+        ul {
+            list-style-type: none;
+            margin-left: 0;
+            margin-right: 0;
+            margin-top:0;
+            overflow: hidden;
+        }
+    }
+    
+    .flags {
+li {
+            display: inline;
+            padding-left: auto;
+        }
+
+        li img {
+            display: inline;
+            list-style-type: none;
+            padding: 8px 6px;
+            overflow: hidden;
+        }
+    }
+
+    footer {
+        
+        .quarters {
+            color: white;
+            font-family: "Roboto", sans-serif;
+            font-weight: 700;
+            font-style: normal;
+            font-size: 20px;
+            display: block;
+            padding-left: 30%;
+            padding-right: 30%;
+            text-align: center;
+        }
+    
+        .direccion {
+            color: #242433;
+            font-family: "Roboto", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 14px;
+            margin: auto;
+            padding: 10px;
+            text-align: center;
+        }
+    
+        .solucion {
+            color: #242433;
+            font-family: "Roboto", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 12px;
+            display: block;
+            padding-top: 3%;
+            padding-bottom: 5%;
+            padding-left: 12%;
+            padding-right: 12%;
+            text-align: center;
+        }
+    }
+    
+    .chat {
+        position: fixed;
+        bottom: 5px;
+        right: 5px;
+    }
+    }
